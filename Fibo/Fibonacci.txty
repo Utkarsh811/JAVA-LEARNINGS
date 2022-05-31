@@ -1,0 +1,6 @@
+Fibonacci Sequence
+The Fibonacci sequence is a type series where each number is the sum of the two that precede it. It starts from 0 and 1 usually. The Fibonacci sequence is given by 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, and so on. The numbers in the Fibonacci sequence are also called Fibonacci numbers. In Maths, the sequence is defined as an ordered list of numbers that follow a specific pattern. The numbers present in the sequence are called the terms. The different types of sequences are arithmetic sequence, geometric sequence, harmonic sequence and Fibonacci sequence.
+
+The Fibonacci sequence of numbers “Fn” is defined using the recursive relation with the seed values F0=0 and F1=1:
+
+Fn = Fn-1+Fn-2

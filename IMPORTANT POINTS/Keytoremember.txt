@@ -1,0 +1,2 @@
+Math.pow always return float value.
+use nextLine for reading string with spaces and next for reading only a word.
