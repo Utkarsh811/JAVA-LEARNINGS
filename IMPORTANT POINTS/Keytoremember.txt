@@ -1,2 +1,12 @@
 Math.pow always return float value.
 use nextLine for reading string with spaces and next for reading only a word.
+
+In Java there is data structure called Hashmap ,
+like python have dictionary java has Hashmap
+it stores key-value pair only.
+It has a function put() to insert or update in the hasmap .if that key  is present in the hashmap then updation will happen
+if(key not present)then insertion will be done.
+ThERE IS NO ORDER in the hashmap .
+
+Hashmap <String,Integer> mydict=new Hashmap<>()
+mydict.put("hello",3232)
