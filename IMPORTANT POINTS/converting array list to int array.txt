@@ -1,0 +1,36 @@
+class Solution {
+    public int[] singleNumber(int[] nums) {
+        int[] arr={3,4,2};
+         HashMap<Integer,Integer> mydict=new HashMap<>();
+        ArrayList<Integer>liist=new ArrayList<Integer>();
+        for (int i=0;i<nums.length;i++){
+          
+            if(mydict.containsKey(nums[i])){
+               int value= mydict.get(nums[i]);
+               value++;
+               mydict.put(nums[i],value);
+
+                
+
+
+
+            }
+            else{
+                mydict.put(nums[i],1);
+            }
+
+            
+        }
+        //System.out.println(mydict);
+        for (Map.Entry<Integer,Integer> mapElement : mydict.entrySet()) {          //Traversing Hashmap
+            if(mapElement.getValue()==1){
+            //System.out.println(mapElement.getKey());
+            int elem =mapElement.getKey(); 
+            liist.add(elem);}
+        }
+        int[] arrr = liist.stream().mapToInt(i -> i).toArray();     conversion*******************************
+       // System.out.println(liist);
+        return arrr;
+        
+    }
+}
