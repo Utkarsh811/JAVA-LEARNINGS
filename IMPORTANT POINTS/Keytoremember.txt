@@ -10,3 +10,6 @@ ThERE IS NO ORDER in the hashmap .
 
 Hashmap <String,Integer> mydict=new Hashmap<>()
 mydict.put("hello",3232)
+
+//ArrayList<Character> liist=new ArrayList<Character>(mydict.keySet());   //vasuumiet
+        // System.out.println(mydict.get(liist.get(0)));
