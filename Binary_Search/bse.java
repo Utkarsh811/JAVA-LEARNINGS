@@ -2,7 +2,7 @@ package Binary_Search;
 
 import java.util.*;
 
-public class bs1 {
+public class bse {
 
   static String bse(ArrayList<Integer> mylist, int target,int size) {
     System.out.println(mylist);
