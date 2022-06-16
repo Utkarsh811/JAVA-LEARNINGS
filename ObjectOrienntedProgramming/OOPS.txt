@@ -1,0 +1,51 @@
+Principles of Object Oriented Programming Language
+#1 Abstraction-Hiding Internal details and showing only required features 
+#2 Encapsulation
+#3 Polimorphism
+#4 Inheritance 
+
+
+Encapsulation-Take an example of television, all the wirings and monitoe screen abstraction , non hidden features all
+kept in one box. The way of putting everything in one box is called Encapsulation.
+
+
+Inheritence  -> Adding something new features in a something make that thing new .
+eg-> You can see the old computers , all the new computers are inherited from the old because main circuitery is same just there is differnce in new feautures and changes done in new computers.
+Specialization === Inheritance
+Generalization === Polimorphism
+
+
+Object/Classes
+ Object is defined by its Properties and behaviours
+
+ Class - design of something, blueprint . you can create various objects from that. (on paper)
+ object - it is real based entity (really existed)
+ From one class you can create as many objects you want
+
+
+ class television{
+     private int volume;  //data member
+     private int channel; //data member
+
+     static int volume(){  //methods
+
+     }
+     static int channel(){   //methods
+
+     }
+ }
+
+
+ class test{
+     public static void main(String args[]){
+         //object creation of television
+         television t =new television();
+         // t->reference
+ 
+         
+     }   
+ }
+
+
+
+ 

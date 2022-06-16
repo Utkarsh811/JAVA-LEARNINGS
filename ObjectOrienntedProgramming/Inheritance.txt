@@ -1,0 +1,2 @@
+Inheritance-: Process of acquiring the features of an existing class into a new class
+Using Inheritance we can use the properties and methods of super class

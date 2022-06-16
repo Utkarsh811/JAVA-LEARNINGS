@@ -1,0 +1,32 @@
+Data Hiding
+Just like while watching the television , you enjoy the functionalities as by using the buttons,
+you dont need to learn the interior functionality or do some changes in the circuitary .
+it would be difficult for the user while using the product , he have to learn it before using that
+ so Data hiding 
+ alllows you to hide the data .
+
+In java we make data members private by writing
+private int  volume; so datamembers can only be accessible in that class only not in other class
+ Constructors
+
+
+ Constructor is method of a class which automatically called when "object is created"
+ >Constructor is method which has same name as classname
+ > a method have return type but a constructor method have no return type
+ eg
+
+ class Rect{
+     private int length;
+     private int breadth;  //data hiding
+
+     public Rect(){   //this is a non parameterized constructor 
+         length=9;    // beware that constructor should have same name as class
+         breadth=90;  // constructor is automatically called when new object is created
+
+     }
+ }
+ class Test{
+     public static void main(String args[]){
+         Rect r=new Rect();
+     }
+ }
