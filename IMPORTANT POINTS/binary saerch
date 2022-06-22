@@ -1,0 +1,5 @@
+ mid=lower+(higher-lower)/2;
+ In binary search this basically used to avoid the interger overflow ,
+ suppose you used int for storing lower and higher and then you  used lower + higher .
+ at some point the result will overflow the value integer limit so we do higher - lower 
+ which basically means the same as mid.

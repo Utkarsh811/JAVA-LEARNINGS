@@ -31,3 +31,42 @@
     
 // }
 // }
+
+
+/** 
+ * Forward declaration of guess API.
+ * @param  num   your guess
+ * @return 	     -1 if num is higher than the picked number
+ *			      1 if num is lower than the picked number
+ *               otherwise return 0
+ * int guess(int num);
+ */
+
+// public class Solution extends GuessGame {
+//     public int guessNumber(int n) {
+//         //System.out.println(n);
+//         //System.out.println(guess(n));
+//         int picknumber=0;
+//         int lower=1;
+//         int higher= n;
+//         while(lower<=higher){
+//             System.out.println(higher + "," + lower);
+//         picknumber=lower+(higher-lower)/2;
+//             System.out.println(picknumber);
+//                System.out.println(guess(picknumber));
+        
+//         if(guess(picknumber) == 0){
+//             return picknumber;
+//         }
+//         if(guess(picknumber)==-1){
+//             higher=picknumber-1;
+            
+//         }
+//         if(guess(picknumber)==1){//5<6
+//             lower=picknumber+1;
+//         }
+//         }
+//         return 0;
+        
+//     }
+// }
