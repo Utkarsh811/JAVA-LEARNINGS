@@ -1,0 +1,31 @@
+//Binary search solution
+
+class Solution {
+    public boolean isPerfectSquare(int num) {
+        long lower=0;
+        long higher=50000;
+        long mid=0;
+        long temp=0;
+        while(lower<=higher){
+            mid=lower+(higher-lower)/2;
+            
+             temp=mid*mid;
+           
+            if(temp==num){
+                 System.out.println(mid);
+                 System.out.println(temp);
+                return true;
+            }
+            else if(temp<num){
+                lower=mid+1;
+            }
+            else{
+                higher=mid-1;
+            }
+            
+            
+        }
+        return false;
+        
+    }
+}
