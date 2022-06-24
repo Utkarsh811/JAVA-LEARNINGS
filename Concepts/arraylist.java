@@ -16,6 +16,7 @@ public class arraylist{
         System.out.println(list1);
         System.out.println(list1.remove(5));
         System.out.println(list1.get(5));
+        
 
 
         String str="utkarsh";
