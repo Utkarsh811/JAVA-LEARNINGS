@@ -1,0 +1,62 @@
+first approach linear
+
+
+class Solution {
+    public char nextGreatestLetter(char[] letters, char target) {
+             System.out.println("taget"+(int)target);
+        for(int i=0;i<letters.length;i++){
+            System.out.println((int)letters[i]);
+            
+            if((int)letters[i]!=target && (int)letters[i]>target){
+                return letters[i];
+            }
+        }
+        return letters[0];  if no letter found
+    }
+}
+
+
+//Binary search Solution
+
+class Solution {
+    public char nextGreatestLetter(char[] letters, char target) {
+        int low=0;
+        int high=letters.length-1;
+        int mid=0;
+        while(low<=high){
+            mid=low+(high-low)/2;
+            System.out.println("low="+low+"high="+high);
+            System.out.println(mid);
+            if((int)letters[mid]==(int)target){
+                if(mid==letters.length-1){
+                    System.out.println(89);
+                    return letters[0];
+                }
+                for(int i=mid;i<letters.length;i++){
+                       System.out.println(8);
+                    System.out.println(letters[i] + ","+ target);
+                    if((int)letters[i]>(int)target){
+                     System.out.println(800);
+                        return letters[i];
+                        }
+                  
+                }
+                  return letters[0];
+             
+                
+            }
+            else if((int)letters[mid]<(int)target){
+                low=mid+1;
+            }
+            else{
+                high=mid-1;
+            }
+            
+        }
+        if(low>letters.length-1){
+            return letters[0];
+        }
+        return letters[low];
+        
+    }
+}
