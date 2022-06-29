@@ -1,0 +1,29 @@
+class Solution {
+    public int arrangeCoins(int n) {
+        long low=1;
+        long high=n;
+        long mid=0;
+        long sum=0;
+        while(low<=high){
+            System.out.println("low "+low+"high "+high);
+            mid=low+(high-low)/2;
+            sum=(mid*(mid+1))/2;
+            System.out.println("mid"+mid);
+            System.out.println("sum"+sum);
+            if(sum<n){
+                low=mid+1;
+            }
+            if(sum>n){
+                high=mid-1;
+            }
+            if(sum==n){
+                return (int)mid;
+            }            
+        }
+        if(sum>n){
+            return (int)(mid-1);
+        }
+        return (int)mid;
+        
+    }
+}

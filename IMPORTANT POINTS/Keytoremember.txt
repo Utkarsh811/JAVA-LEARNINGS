@@ -13,3 +13,5 @@ mydict.put("hello",3232)
 
 //ArrayList<Character> liist=new ArrayList<Character>(mydict.keySet());   //vasuumiet
         // System.out.println(mydict.get(liist.get(0)));
+//
+***Use long data type in questions to avoid errors. most common mistake
