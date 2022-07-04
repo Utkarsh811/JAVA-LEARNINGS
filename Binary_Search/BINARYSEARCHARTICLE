@@ -1,0 +1,4 @@
+if you are given a sorted order array then in that case using binary search you can find out the correct position of the element in an array.
+using binary search you have to return the lower .
+the binary search algo do the task in O(LOG N)
+nums contains distinct values sorted in ascending order.

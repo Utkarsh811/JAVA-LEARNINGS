@@ -1,0 +1,23 @@
+class Solution {
+    public int peakIndexInMountainArray(int[] arr) {
+        int low=0;
+        int high=arr.length-1;
+        int mid=0;
+        while(low<=high){
+            mid=low+(high-low)/2;
+            System.out.println("low="+low+"high="+high);
+            if(mid==0) mid=mid+1;
+            if(mid ==arr.length-1)mid=mid-1;
+            
+            if(arr[mid-1]<arr[mid] && arr[mid]>arr[mid+1]){
+                System.out.println(arr[mid]);
+                return mid;}
+            else if(arr[mid]>arr[mid-1])low=mid+1;
+            else high=mid-1;
+            
+        }
+        return 0;
+        
+        
+    }
+}
