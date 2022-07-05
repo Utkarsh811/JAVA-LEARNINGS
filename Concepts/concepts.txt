@@ -1,0 +1,7 @@
+
+The integer passed to the constructor represents its initial capacity, i.e., the number of elements it can hold before it needs to resize its internal array (and has nothing to do with the initial number of elements in the list).
+
+To initialize an list with 60 zeros you do:
+
+List<Integer> list = new ArrayList<Integer>(Collections.nCopies(60, 0));
+

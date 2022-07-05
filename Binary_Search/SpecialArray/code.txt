@@ -1,0 +1,34 @@
+leetcode 1608. Special Array With X Elements Greater Than or Equal X
+
+
+//Naive Approach
+
+class Solution {
+    public int specialArray(int[] nums) {
+        int x=0,count=0;
+        int status=0;
+        
+        for(int i=0;i<1001;i++){
+            x=i;
+            count=0;
+            for(int j=0;j<nums.length;j++){
+            if(nums[j]>=x){
+            
+                count++;
+                
+            }
+                  if(count==x){ System.out.println("x="+x+"count="+count);}
+            }
+        if(count==x){ System.out.println("x="+x+"count="+count);break;}
+           
+            
+        
+        }
+       
+        if(x==count)return x;
+        else return -1;
+        
+        
+    }
+}
+
