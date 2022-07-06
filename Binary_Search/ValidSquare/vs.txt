@@ -2,30 +2,28 @@
 
 class Solution {
     public boolean isPerfectSquare(int num) {
-        long lower=0;
-        long higher=50000;
+        long low=1;
+        long high=num/2;
         long mid=0;
-        long temp=0;
-        while(lower<=higher){
-            mid=lower+(higher-lower)/2;
+        long res=0;
+        boolean a=true;
+        boolean b=false;
+        while(low<=high){
+            mid=low+(high-low)/2;
             
-             temp=mid*mid;
-           
-            if(temp==num){
-                 System.out.println(mid);
-                 System.out.println(temp);
-                return true;
-            }
-            else if(temp<num){
-                lower=mid+1;
-            }
-            else{
-                higher=mid-1;
-            }
+            res=mid*mid;
+            
+            System.out.println("low="+low+"high="+high+"res="+res);
+            if(res==num) return a;
+            else if(res>num) high=mid-1;
+            else low=mid+1;
+            
             
             
         }
-        return false;
+        if(num==1) return a;
+        else
+        return b;
         
     }
 }
