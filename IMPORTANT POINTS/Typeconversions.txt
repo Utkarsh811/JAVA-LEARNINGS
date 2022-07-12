@@ -1,0 +1,15 @@
+int to String in java
+
+
+Here are 3 ways to convert an int to a String
+
+String s = String.valueOf(n);
+String s = Integer.toString(n);
+String s = "" + n;
+We know that "" is of type String. It is known as the empty string. It is a String with no characters in it. The + operator, when used on the right side of a String, simply connects stuff to the right of the original String. If what it's connecting is not yet a String, it automatically converts it into one, which is what we want for this exercise.
+
+"" + "Hello" + "there."
+becomes the String "Hello there." and
+
+"" + n
+becomes the String n, where n was automatically converted into a String for us.

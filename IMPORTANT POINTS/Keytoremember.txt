@@ -15,3 +15,49 @@ mydict.put("hello",3232)
         // System.out.println(mydict.get(liist.get(0)));
 //
 ***Use long data type in questions to avoid errors. most common mistake
+
+******Java Stdin and Stdout II
+int i = scan.nextInt();
+double d = scan.nextDouble();
+*********scan.nextLine();
+String s = scan.nextLine();
+
+*******After supplying data for int, we would hit the enter key. What nextInt() and nextDouble() does is it assigns integer to appropriate variable and keeps the enter key unread in thekeyboard buffer. so when its time to supply String the nextLine() will read the enter key from the user thinking that the user has entered the enter key.(that's we get empty output) . Unlike C, there is no fflush() to clean buffer, so we have to flush by not taking it in variable.
+
+.hasNext() method in java used with scanner class
+https://www.javatpoint.com/post/java-scanner-hasnext-method
+
+
+some important code working
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    static Scanner sc=new Scanner(System.in);
+    static int b=sc.nextInt();
+     static int h=sc.nextInt();
+     static boolean flag=true;
+     static{try{
+         if(b<=0 || h<=0){
+             flag=false;
+             throw new Exception("Breadth and height must be positive");
+         }
+         
+     }
+     catch(Exception e){
+         System.out.println(e);
+     }}
+    
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        int area;
+        if(flag){
+            area=b*h;
+            System.out.println(area);
+            
+        }
+        
+        
+    }
+}
