@@ -1,0 +1,44 @@
+Check if a given key exists in Java HashMap
+https://www.tutorialspoint.com/check-if-a-given-key-exists-in-java-hashmap#:~:text=Use%20the%20containsKey()%20method,in%20the%20HashMap%20or%20not.
+hasNext() - returns true if there is next element in the hashmap
+next() - returns the next element of the hashmap
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map.Entry;
+
+class Main {
+  public static void main(String[] args) {
+    // create a HashMap
+    HashMap<String, String> languages = new HashMap<>();
+    languages.put("Java", "Enterprise");
+    languages.put("Python", "ML/AI");
+    languages.put("JavaScript", "Frontend");
+    System.out.println("HashMap: " + languages);
+
+    // create an object of Iterator
+    Iterator<Entry<String, String>> iterate1 = languages.entrySet().iterator();
+
+    // iterate through key/value mappings
+    System.out.print("Entries: ");
+    while(iterate1.hasNext()) {
+      System.out.print(iterate1.next());
+      System.out.print(", ");
+    }
+
+    // iterate through keys
+    Iterator<String> iterate2 = languages.keySet().iterator();
+    System.out.print("\nKeys: ");
+    while(iterate2.hasNext()) {
+      System.out.print(iterate2.next());
+      System.out.print(", ");
+    }
+
+    // iterate through values
+    Iterator<String> iterate3 = languages.values().iterator();
+    System.out.print("\nValues: ");
+    while(iterate3.hasNext()) {
+      System.out.print(iterate3.next());
+      System.out.print(", ");
+    }
+  }
+}
