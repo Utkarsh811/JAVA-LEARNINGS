@@ -5,3 +5,22 @@ To initialize an list with 60 zeros you do:
 
 List<Integer> list = new ArrayList<Integer>(Collections.nCopies(60, 0));
 
+String data = "Hello, World!";
+int nameLength = data.length(); // 13
+
+
+String[] myArray = { "I", "Love", "Music" };
+int arrayLength = myArray.length; 
+
+    //Creating ArrayList  
+    ArrayList<String> list=new ArrayList<String>();  
+    //storing 2 elements  
+    list.add("ankit");  
+    list.add("nippun");  
+    //printing size of ArrayList  
+    System.out.println(list.size());//2  
+
+
+ Character.isAlphabetic()-> to check whether a character is an alphabet or not 
+
+    

@@ -1,0 +1,50 @@
+class Solution {
+    public String reformatDate(String date) {
+        //ArrayList<String> arr=new ArrayList<String>();
+            
+            String[] arr1=date.split(" ");
+   
+        for(String a:arr1){
+            System.out.println(a);
+        }
+        HashMap<String, Integer> map=new HashMap<String,Integer>();
+        map.put("Jan",01);
+        map.put("Feb",02);
+        map.put("Mar",03);
+        map.put("Apr",04);
+        map.put("May",05);
+        map.put("Jun",06);
+        map.put("Jul",07);
+        map.put("Aug",8);
+        map.put("Sep",9);
+       
+        map.put("Oct",10);
+        map.put("Nov",11);
+        map.put("Dec",12);
+        System.out.println(map);
+        String newdat;
+        String dat="";
+        for(int i=0;i<arr1[0].length();i++){
+                System.out.println(arr1[0].charAt(i));
+            if( Character.isAlphabetic(arr1[0].charAt(i))){
+                break;
+            }
+          
+            dat=dat+arr1[0].charAt(i);
+            
+        }
+        if(Integer.parseInt(dat)<10){
+            dat="0"+dat;
+        }
+        
+        if(map.get(arr1[1])<10){
+             newdat=arr1[2]+"-"+"0"+map.get(arr1[1])+"-"+dat;
+            
+        }
+        else{
+            newdat=arr1[2]+"-"+map.get(arr1[1])+"-"+dat;
+        }
+        System.out.println(newdat);
+        return newdat;
+    }
+}
