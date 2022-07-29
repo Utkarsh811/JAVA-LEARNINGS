@@ -1,0 +1,72 @@
+Strings
+A String is a sequence of characters. In Java String is a class from which you make String objects, like:
+String name = "Alan Turing";
+String course = "CS 303E";
+String ssn = "123456789";
+A String has an associated length. To obtain the length of a String do:
+
+int nameLen = name.length();
+You can also concatenate two Strings to get a third String using the + operator.
+
+String zip9 = "78712" + "-" + "1059";
+You can convert data that is entered as a primitive type into a String by using the valueOf() method.
+
+int i = 10;
+String ten = String.valueOf ( i );
+Basic Output
+In Java there are no I/O statements in the Java language. The I/O methods belong to classes in the java.io package. Any source or destination for I/O is considered a stream of bytes. There are three objects that can be used for input and output.
+System.out can be used to write output to the console.
+System.err can be used to write error messages to the console.
+System.in can be used to handle input from the console.
+The System.out object has two methods - print() and println(). The println() method will print a carriage return and line feed after printing so that the next output will be printed on a new line. The method print() will keep the cursor on the same line after printing.
+
+Basic Input
+The primitive data types in Java are: boolean, byte, char, short, int, long, float, and double. For each primitive data type, Java provides a wrapper class that allows the data to be represented as objects. The corresponding wrapper classes are: Boolean, Byte, Character, Short, Integer, Long, Float, and Double. The wrapper classes provide methods to perform certain data conversions, e.g. the method parseInt() of the Integer class can convert a String to an integer.
+
+
+int num = Integer.parseInt ( "45 " );
+
+How do we input data from the console? We will discuss the ways to input a String, an integer, and a real number. System.in is a pre-defined InputStream used with the console. Unfortunately this class does not have a method for simple input. But there is a java.io.BufferedReader class that has a method readLine(). A buffer is a region in memory where input from the terminal is stored until needed by the program. If you want to perform buffered input on the System.in stream you would pass the System.in object into the constructor.
+
+
+BufferedReader input = new BufferedReader (new InputStreamReader (System.in));
+
+Once we have created a BufferedReader we can use its method readLine() to read one line of characters at a time from the keyboard and store it as a String object.
+
+
+String inputString = input.readLine();
+
+Once we have the input data in a String object we can use the various methods available to a String object to manipulate the data. Since data can get corrupted during an input operation the method readLine() can alert the user by throwing an exception. There are several ways that Java allows a user to handle exceptions. For the time being we will add the phrase "throws IOException" and let the system to do the error handling.
+
+Reading an integer: One way to read an integer is to read the input as a String and then use the method parseInt() of the wrapper class Integer to convert the String to an integer.
+
+
+int num = Integer.parseInt ( inputString );
+
+Reading a real number: There is a wrapper class java.lang.Double that can take the input as a String and a method parseDouble() to convert the String to a real number.
+
+
+double d = Double.parseDouble ( inputString );
+
+To read from the console we must use a BufferedReader object. But the BufferedReader class is in the package java.io and has to imported. The following program snippet shows how to read and write to the console.
+
+
+import java.io.*;
+
+public class CalcArea
+{
+  public static void main ( String args[] ) throws IOException
+  {
+    System.out.print ( "Enter the radius: " );
+
+    BufferedReader input = new BufferedReader ( new InputStreamReader ( System.in ) );
+
+    String inputString = input.readLine();
+
+    double radius = Double.parseDouble ( inputString );
+
+    double area = 3.14159 * radius * radius;
+
+    System.out.println ( "Area is: " + area );
+  }
+}
