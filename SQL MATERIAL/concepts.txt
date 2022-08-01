@@ -1,0 +1,21 @@
+we use is keyword to check it with null
+In databases, NULL is unknown, not applicable or missing information, therefore, you cannot use the comparison operators (=, >,<, etc.,) to check whether a value is NULL or not.
+SELECT 
+    companyName, fax
+FROM
+    suppliers
+WHERE
+    fax IS NOT NULL
+
+more to read-:"https://www.zentut.com/sql-tutorial/sql-is/"
+
+foreign key-:
+A foreign key is a key used to link two tables together. This is sometimes also called as a referencing key.
+
+A Foreign Key is a column or a combination of columns whose values match a Primary Key in a different table.
+** Minus operator in sql check it out
+conditions for doing minus between 2 tables
+The WHERE clause is optional in the above query.
+The number of columns in both SELECT statements must be same.
+The data type of corresponding columns of both SELECT statement must be same.
+

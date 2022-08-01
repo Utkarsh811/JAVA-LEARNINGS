@@ -1,0 +1,13 @@
+differece b/w
+String  s1=new String("utkarsh");
+=>In this case 2 objects will be created one is in heap and other one is in SCP(String constant pool)
+HEAP                   SCP
+s1-->utkarsh           utkarsh
+s2="utkarsh" ;(known as String literal)
+Inthis case only object is created in the SCP and s2 always referring that object
+
+Whenever we use a new operator a new object always created in the heap
+There maybe a chance of existing two objects with same name on the heap but there is no chance of existing 2 objects with same name on SCP.
+ HEAP                                   SCP
+ Duplication allowed                 Duplication not allowed
+ 
