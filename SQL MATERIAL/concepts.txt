@@ -19,3 +19,12 @@ The WHERE clause is optional in the above query.
 The number of columns in both SELECT statements must be same.
 The data type of corresponding columns of both SELECT statement must be same.
 
+imp query example for capatalize substring
+
+
+select
+user_id,
+concat(upper(substring(name,1,1)),lower(substring(name,2,length(name)))) as name
+from 
+Users
+order by user_id asc;
