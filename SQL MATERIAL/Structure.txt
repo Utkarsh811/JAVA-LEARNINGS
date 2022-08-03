@@ -8,3 +8,18 @@ insert into Employees (employee_id, name, salary) values ('9', 'Kannon', '7700')
 
 truncate used to delete the data from the table
 drop used to delete complete structure of the table
+
+LIKE AND NOT LIKE OPERATOR IS USED WITH WHERE CLAUSE USE  TO TACKLE WITH PART OF THE STRINGS
+"https://www.programiz.com/sql/like-operator"
+
+check out the link-:"http://www.geeksengine.com/database/basic-select/arithmetic-operations.php#:~:text=When%20you%20need%20to%20perform%20calculations%20in%20SQL,contain%20column%20names%2C%20numeric%20numbers%2C%20and%20arithmetic%20operators."
+"https://www.w3schools.com/SQl/func_mysql_if.asp"
+
+examples-:
+select employee_id  ,
+if(employee_id%2!=0 and name NOT LIKE 'M%' ,salary,0)as bonus 
+from EMPLOYEES  ORDER BY employee_id ASC;
+
+UPDATE - it is used to update the schema of the table
+
+"https://www.geeksforgeeks.org/how-to-swap-a-values-in-mysql/"

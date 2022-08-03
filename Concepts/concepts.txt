@@ -35,3 +35,12 @@ int arrayLength = myArray.length;
     Returns a string representation of the contents of the specified array. The string representation consists of a list of the array’s elements, enclosed in square brackets (“[]”). Adjacent elements are separated by the characters “, ” (a comma followed by a space). Returns “null” if a is null.
 
 In case of an Object Array, if the array contains other arrays as elements, they are converted to strings by the Object.toString() method inherited from Object, which describes their identities rather than their contents.
+
+**for using BigInteger concept in java must import 
+import java.math.BigInteger;  
+it wont work in in import java.util.*
+
+
+
+ArrayList to Array conversion most important concept
+"https://www.geeksforgeeks.org/arraylist-array-conversion-java-toarray-methods/"

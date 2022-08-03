@@ -1,0 +1,7 @@
+Heaps
+most frequent use of the heap you will found in the question related to -:
+finding maximum  kth element
+level order traversal of heap gives you priority  queue
+IN java
+PriorityQueue<Integer> pq=new PriorityQueue<Integer>(); Min heap
+PriorityQueue<Integer> pq=new PriorityQueue<Integer>(Collections.reverseOrder()); Max Heaps
