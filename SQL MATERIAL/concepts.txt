@@ -28,3 +28,17 @@ concat(upper(substring(name,1,1)),lower(substring(name,2,length(name)))) as name
 from 
 Users
 order by user_id asc;
+
+select sell_date,
+count(distinct product) as  num_sold,
+group_concat( distinct product order by product asc) as products
+from Activities
+group by sell_date;
+
+
+checkout group by , group_concat,concat keywords
+Read about Like operator use to identify pattern in strings
+select *
+
+from Patients
+where conditions like "% DIAB1%" or conditions like "DIAB1% %" or conditions like "DIAB1%";

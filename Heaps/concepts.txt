@@ -5,3 +5,8 @@ level order traversal of heap gives you priority  queue
 IN java
 PriorityQueue<Integer> pq=new PriorityQueue<Integer>(); Min heap
 PriorityQueue<Integer> pq=new PriorityQueue<Integer>(Collections.reverseOrder()); Max Heaps
+pq.peek(); returns the top of the priority queue
+ps.add(); to add
+pq.pool(); to pop out top element
+
+

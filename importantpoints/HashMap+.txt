@@ -1,0 +1,24 @@
+HashMap a form of dictionary
+composed of pairs of keys and values
+keys= always unique
+values=not unique
+
+mathods inside HashMap
+map.put() has 2 cases-:
+1. key already exist -> here it works as an update.it updates the value for that key.
+2.key does not exist->here it inserts the new pair of the key.
+//Search operations-> to check whether a key exists in a HashMap or not
+map.containsKey(key)->returns true or false
+//to get value corresponding key
+map.get(key) if key exists return value
+map.get(key) if key doesnot exist return null
+
+Iterating over HashMap
+like we use the for loop as
+for(int a:arr){ System.out.println(a);}
+
+In HashMap we use
+for(Map.Entry<Integer,Integer> e:map.entrySet()){
+    System.out.println(e.getKey());
+    System.out.println(e.getValue());s
+}
