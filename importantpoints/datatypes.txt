@@ -1,0 +1,10 @@
+data types in java
+primitive            non-primitive
+-byte                   -String
+-short                    -Array
+-char                    -Class
+-boolean                 -Object
+-int                     -Interface
+-long
+-float
+-double

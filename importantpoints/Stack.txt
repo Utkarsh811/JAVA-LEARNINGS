@@ -1,0 +1,14 @@
+STACK data structure
+push(O(1))
+POP(O(1))
+PEEK(O(1))-> returning top value
+Stack can be implemented in 3 ways in dsa
+->arrays-> array has a fixed size so we usually do not use thid approach
+->ArrayList->(have variable size)
+->LinkedList->(have variable size)
+--->By using  java collection framework
+Stack<Integer> stk=new Stack<>();
+Implicit Stack->stack which used in memory or in code inside for internal operations in computer
+Explicit Stack->stack which is made by the coder for personal use
+
+
