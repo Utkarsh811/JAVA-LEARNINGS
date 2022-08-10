@@ -1,3 +1,63 @@
+1.class is a collection of objects.                     1. Object is a real entity.
+It does not occupy space during run time.               2.it occupy space.             
+class is blue print not  a real entity.                 3. made by the constructor.
+Inheritance
+use the extends keyword
+Inheritance inherit the properties from parent class to child class.
+The child class will inherit all the public and protected properties and methods of the parent class
+
+Types of Inheritance
+Single Inheritance.
+Multiple Inheritance->Java do not support this
+Multi-level Inheritance
+Hierarichal
+Hybrid-->Java does not support Hybrid
+
+Polymorphism
+methods have same name but have different behaviours.
+It has 2 types-: Compile time Polymorphism(Static)
+                 Run time Polymorphism(Dynamic)
+
+Method Overloading                                             Method Overriding
+
+If 2 or more methods have same name                   child class inherits methods with the same parameters
+but have different parameters                        which are present in the parent class.
+is known as  method Overriding
+
+solved during compile time                            solved during run-time
+
+
+ENcapsulation-:
+process of wrapping the data(variables ) and methods together in a  single unit.
+Steps achieving encapsulation-:
+1.by Declare the variable of a class as a private 
+2. provide getter or setter methods  to modify or view the variable names.
+
+Steps to achieve abstraction
+1. by abstract class
+2. by interface class
+
+Access modifiers
+It helps to set the accessibility of classes,methods and other members.
+
+public
+private
+protected
+
+
+
+
+
+
+
+
+Acess modifiers are
+public,private,protected
+
+
+
+
+
 Principles of Object Oriented Programming Language
 #1 Abstraction-Hiding Internal details and showing only required features 
 #2 Encapsulation
