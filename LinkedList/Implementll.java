@@ -116,12 +116,21 @@ public class Implementll {
     {
         /*  1.Deletion of the 1st index*/
         if(size!=0 && indezz==1){
+
+          if(size==1)
+          {
+            head=tail=null;
+            size--;
+
+          }
+          else{
             Node deletenode=new Node();
             deletenode=head;
             head=head.next;
             System.out.println("the deleted element is "+deletenode.data);
             deletenode.next=null;
             size--;
+          }
         }
         else if(size!=0 && (indezz>1 && indezz<size))
         {
@@ -140,7 +149,7 @@ public class Implementll {
 
             }
             pemt=temp.next;
-            System.out.println(temp.data+""+pemt.data);
+            //System.out.println(temp.data+""+pemt.data);
             temp.next=pemt.next;
             size--;
             pemt.next=null;
@@ -157,6 +166,7 @@ public class Implementll {
             Lstemp=head;
             while(cnt<size-1){
                 Lstemp=Lstemp.next;
+                cnt++;
 
             }
             System.out.println("the deleted element is "+tail.data);

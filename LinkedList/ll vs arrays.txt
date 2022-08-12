@@ -1,0 +1,10 @@
+Arrays size is fixed
+Inserting element into an array can be expensive
+Advantage of linked list over arrays-:1. dynamic size 2. ease of insertion and deletion
+
+Disadvantages over arrays 1. accessing elements are difficult O(n) 2. Require extra space for pointers 
+
+
+conclusion
+linked list gives you better performance in case of large size of array . for small size 
+ArrayList is beneficial
