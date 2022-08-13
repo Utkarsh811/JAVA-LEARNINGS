@@ -1,0 +1,5 @@
+Queue
+storing element at one end and inserting the element at another end
+First in first out
+operations enqueue,dequeue,peek,empty
+popping elements from front  , and pushing elements from back

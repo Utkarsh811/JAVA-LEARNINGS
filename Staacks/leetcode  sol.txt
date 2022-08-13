@@ -1,0 +1,67 @@
+
+CODE 20. Valid Parentheses
+perfect solution
+
+class Solution {
+    
+ static boolean handle(Stack<Character> stk,char val)
+    {
+        if(stk.isEmpty())
+        {
+            return false;
+        }
+        else if(stk.peek()!=val)
+        {
+            return false;
+        }
+        else{
+            stk.pop();
+            return true;
+        }
+    }
+    public boolean isValid(String s) {
+        Stack<Character> stk=new Stack<>();
+        for(int i=0;i<s.length();i++)
+        {
+            char val=s.charAt(i);
+            if(val=='(' ||val=='{'||val=='[')
+            {
+            stk.push(val);
+            }
+            else
+            {
+                if(val==')')
+                {
+                    boolean res=handle(stk,'(');
+                        if(res==false)
+                            return res;
+                    
+                }
+                else if(val=='}')
+                {
+                       boolean rees=handle(stk,'{');
+                             if(rees==false)
+                            return rees;
+                    
+                }
+                else if(val==']')
+                {
+                       boolean reees=handle(stk,'[');
+                             if(reees==false)
+                            return reees;
+                    
+                }
+                else{
+                    continue;
+                }
+            }
+            
+        }
+        if(stk.isEmpty())
+            return true;
+        else
+            return false;
+        
+        
+    }
+}
