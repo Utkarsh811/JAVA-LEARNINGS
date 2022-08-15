@@ -29,6 +29,7 @@ public class Leap
     {
     Scanner sc = new Scanner(System.in);
     int year = sc.nextInt();
+    
 
     System.out.println(Findyear(year));
     sc.close();
