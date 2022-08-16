@@ -61,3 +61,7 @@ public class Solution {
         
     }
 }
+
+*Use TreeMap to store sorted TreeMap
+*Use Collection.sort() to sort ArrayList
+*Use TreeSet to use sorted HashSet

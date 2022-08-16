@@ -3,3 +3,19 @@ storing element at one end and inserting the element at another end
 First in first out
 operations enqueue,dequeue,peek,empty
 popping elements from front  , and pushing elements from back
+
+Front pointer-> use to delete the element
+rear pointer-> use to add the element
+enqueue- add method
+dequeue- delete method
+front- peek the element
+
+Queue
+CIRCULAR QUEUE{
+    IMPLEMENTATION BY ARRAYS
+    add O(1)
+    remove O(1)
+    peek O(1)
+
+    rear=(rear+1)%size
+}
