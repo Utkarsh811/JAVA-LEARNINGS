@@ -62,6 +62,22 @@ public class Solution {
     }
 }
 
+https://attacomsian.com/blog/java-string-contains-substring  for string substring methods
 *Use TreeMap to store sorted TreeMap
 *Use Collection.sort() to sort ArrayList
 *Use TreeSet to use sorted HashSet
+
+OverLoaded methods
+Methods overloading means methods that share the same name but have different parameters
+method name+parameters=method signatures
+FINAL KEYWORD->in other programming languages we have constant whereas in java we have final.
+OverLoaded Constructors
+methods that share same name but different parameters
+name+parameter=signature
+
+DESTRUCTOR IN Java
+In java we use constructor to create the objects.if this retain in memory then it would be a waste of memory
+Destructor is  used to deallocate the objects.It frees up the memory.
+In java this work is done implicitly by the JVM USING THe garbage collector.
+But  we can also do this work explicitely by using the finalize() keyword
+
