@@ -63,7 +63,7 @@ public class Solution {
 }
 
 https://attacomsian.com/blog/java-string-contains-substring  for string substring methods
-*Use TreeMap to store sorted TreeMap
+*Use TreeMap to store sorted HashMap with respect to keys
 *Use Collection.sort() to sort ArrayList
 *Use TreeSet to use sorted HashSet
 

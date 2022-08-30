@@ -1,7 +1,7 @@
-import java.io.*;
+//import java.io.*;
 import java.util.*;
 
-public class Solution {
+public class code {
    public static boolean isAnagram(String A, String B) {
    //Complete the function
    Boolean retValue = false;
@@ -28,6 +28,7 @@ public class Solution {
              System.out.println("Not Anagrams");
              
          }
+         sc.close();
          
     }
 }
