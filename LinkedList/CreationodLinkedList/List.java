@@ -19,6 +19,7 @@ public class List {
         }
         else{
             Tail.next=newnode;
+            Tail=newnode;
 
         }
         
