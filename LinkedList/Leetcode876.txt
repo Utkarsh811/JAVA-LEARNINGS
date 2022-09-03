@@ -1,0 +1,73 @@
+876. Middle of the Linked List
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+
+  public ListNode middleNode(ListNode head) {
+    int middle = 0;
+    ListNode traverse = new ListNode();
+    traverse = head;
+    int length = 0;
+    while (traverse != null) {
+      System.out.println(traverse.val + "->");
+      length++;
+      traverse = traverse.next;
+    }
+    ListNode newlist = new ListNode();
+    System.out.println(length);
+    if (length % 2 == 0) {
+      middle = ((length / 2 + (length + 1) / 2) / 2) + 1; //second middle
+      traverse = head;
+      for (int i = 1; i <= length; i++) {
+        if (i == middle) {
+          head = traverse;
+          break;
+        }
+        traverse = traverse.next;
+      }
+    } else {
+      middle = (length + 1) / 2;
+      traverse = head;
+      for (int i = 1; i <= length; i++) {
+        if (i == middle) {
+          head = traverse;
+          break;
+        }
+        traverse = traverse.next;
+      }
+    }
+    return head;
+  }
+}
+
+
+
+Another approach
+
+
+class Solution {
+    public ListNode middleNode(ListNode head) {
+        ListNode slow=new ListNode();
+            ListNode fast=new ListNode();
+        slow=head;
+        fast=head;
+         ListNode temp=new ListNode();
+        while( fast!=null &&fast.next!=null)
+        {
+            slow=slow.next;
+            temp=fast.next;
+            fast=temp.next;
+        }
+        return slow;
+        
+        
+    }
+}

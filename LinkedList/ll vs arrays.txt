@@ -8,3 +8,27 @@ Disadvantages over arrays 1. accessing elements are difficult O(n) 2. Require ex
 conclusion
 linked list gives you better performance in case of large size of array . for small size 
 ArrayList is beneficial
+
+
+Use of Linkedlist
+*We mostly uses LinkedList while switching the tabs,in image gallary left and right 
+*In implementation of Stacks and Queues
+*In HashMap and HashSet
+*Music Player
+
+
+
+LINKED LIST   VERSIS  Arrays
+
+1. Linked List are more memory efficient than Arrays as which declaring the arrays , we require a large chunk of memory but 
+for creation of linkedlist we need a chunk for a single node.
+
+2. For accessing elements of particular index ->
+In case of arrays , we can access in O(1)
+In case of LinkedList , we have to traverse from head till the index.
+
+3. Deletion and Insertion operation in the arrays is costly in terms of time whereas in case of linkedlist
+it is efficient.
+
+4. When have insertion ,deletion problems we use LinkedList , but for sorting problems we use arrays
+as we have merge sort

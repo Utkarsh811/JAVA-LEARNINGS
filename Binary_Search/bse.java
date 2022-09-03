@@ -4,7 +4,7 @@ import java.util.*;
 
 public class bse {
 
-  static String bse(ArrayList<Integer> mylist, int target,int size) {
+  public static String bsei(ArrayList<Integer> mylist, int target,int size) {
     System.out.println(mylist);
     System.out.println(mylist.size());
 
@@ -48,7 +48,7 @@ public class bse {
     }
     System.out.println("Enter the target element-:");
     int target = sc.nextInt();
-    System.out.printf("%s", bse(mylist, target,size));
+    System.out.printf("%s", bsei(mylist, target,size));
     sc.close();
   }
 }

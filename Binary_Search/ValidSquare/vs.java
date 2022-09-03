@@ -21,7 +21,7 @@
 package Binary_Search.ValidSquare;
 import java.util.*;
 
-import org.xml.sax.InputSource;
+//import org.xml.sax.InputSource;
 
 public class vs {
     static boolean isPerfectSquare(int num) {

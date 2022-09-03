@@ -1,0 +1,38 @@
+237. Delete Node in a Linked List
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+
+    public void deleteNode(ListNode node) {
+        ListNode done=new ListNode();
+        done=node.next;
+        while(node.next!=null)
+        {
+        
+        
+     
+        //swapping
+        int temp=node.val;
+        node.val=done.val;
+        done.val=temp;
+        //swapping done
+        if(done.next==null){
+            node.next=null;
+            break;
+        }
+        
+        node=node.next;
+        done=done.next;
+        }
+        done=null;
+        
+        
+    }
+}

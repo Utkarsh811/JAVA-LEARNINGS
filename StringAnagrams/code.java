@@ -1,4 +1,4 @@
-//import java.io.*;
+package StringAnagrams;
 import java.util.*;
 
 public class code {

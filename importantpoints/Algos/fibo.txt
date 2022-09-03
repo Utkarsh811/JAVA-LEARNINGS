@@ -7,3 +7,19 @@ fib(n)
     else
     return fib(n-1)+fib(n-2);
 }
+
+
+prime no
+  public static boolean isPrime(int value){
+        int mid=value/2;
+        boolean res=true;
+        for(int i=2;i<=mid;i++)
+        {
+            if(value%i==0){
+                res=false;
+                break;
+            }
+        }
+        return res;
+
+
