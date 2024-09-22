@@ -1,0 +1,27 @@
+JDBC enables the connection of your java file  with the database
+steps to connect jdbc driver
+
+1. Loading the driver --  Class.forname("Drivername");
+2. Establish the Connection--  Connection con= DriverManager.getConnection("url");
+
+3.Statement/PreparedStatement-- con.preparedStatement(sqlquery);
+Statement-- It is used when we have static query(select query)
+PreparedStatement-- It works on the dynamic query(Insert) PreparedStatement st=con.prepareStatement()
+
+4. EXECUTING THE STATEMENT
+execute() for select query
+executequery()
+executeupdate()
+
+
+5.GETTING THE DATA FROM THE DATABASE
+
+In this we have to use our Resultset, it starts checking from index/column 1
+6. close the connection
+
+
+.setInt(Column no ,Column name)
+
+String query= "Insert into tablename (?,?,?,?)"
+
+String query ="UPDATE TABLENAME SET CITY = '"+C+"' WHERE ID="+id+"     // String '""' for integer ""
